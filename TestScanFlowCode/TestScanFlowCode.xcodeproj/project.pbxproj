@@ -13,7 +13,23 @@
 		F7FD5A022828C1310077DD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FD5A002828C1310077DD0E /* Main.storyboard */; };
 		F7FD5A042828C1320077DD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FD5A032828C1320077DD0E /* Assets.xcassets */; };
 		F7FD5A072828C1320077DD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FD5A052828C1320077DD0E /* LaunchScreen.storyboard */; };
+		F7FD5A102828C35A0077DD0E /* OptiScanBarcodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FD5A0E2828C3520077DD0E /* OptiScanBarcodeReader.framework */; };
+		F7FD5A112828C35A0077DD0E /* OptiScanBarcodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7FD5A0E2828C3520077DD0E /* OptiScanBarcodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7FD5A122828C35A0077DD0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7FD5A112828C35A0077DD0E /* OptiScanBarcodeReader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F7FD59F72828C1310077DD0E /* TestScanFlowCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScanFlowCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		F7FD5A032828C1320077DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7FD5A062828C1320077DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7FD5A082828C1320077DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FD5A0E2828C3520077DD0E /* OptiScanBarcodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OptiScanBarcodeReader.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FD5A102828C35A0077DD0E /* OptiScanBarcodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,7 @@
 		F7FD59F92828C1310077DD0E /* TestScanFlowCode */ = {
 			isa = PBXGroup;
 			children = (
+				F7FD5A0E2828C3520077DD0E /* OptiScanBarcodeReader.framework */,
 				F7FD59FA2828C1310077DD0E /* AppDelegate.swift */,
 				F7FD59FC2828C1310077DD0E /* SceneDelegate.swift */,
 				F7FD59FE2828C1310077DD0E /* ViewController.swift */,
@@ -77,6 +96,7 @@
 				F7FD59F32828C1310077DD0E /* Sources */,
 				F7FD59F42828C1310077DD0E /* Frameworks */,
 				F7FD59F52828C1310077DD0E /* Resources */,
+				F7FD5A122828C35A0077DD0E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +308,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NWT9ZV6C42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestScanFlowCode",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestScanFlowCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,6 +341,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NWT9ZV6C42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestScanFlowCode",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestScanFlowCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
